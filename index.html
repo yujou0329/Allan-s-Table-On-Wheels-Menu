@@ -5,105 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Allan’s Table On Wheels | Menu</title>
     <style>
-        :root {
-            --jp-red: #c0392b; /* 朱紅 */
-            --jp-dark: #2f2f2f; /* 消炭色 */
-            --jp-beige: #fdfaf5; /* 鳥子色 - 帶紙質感的米白 */
-            --jp-border: #e0d8cc;
+        :root { 
+            --navy: #002147; /* 經典海軍藍 */
+            --gold: #d4af37; 
+            --bg: #f0f2f5; 
         }
-        body { 
-            font-family: "Hiragino Mincho ProN", "MS PMincho", serif; /* 優先使用明體，更有日式書卷感 */
-            margin: 0; 
-            background-color: var(--jp-beige); 
-            color: var(--jp-dark);
-            line-height: 1.6;
-        }
-        header { 
-            background: white; 
-            text-align: center; 
-            padding: 40px 20px; 
-            border-bottom: 3px solid var(--jp-red);
-            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-        }
-        h1 { 
-            margin: 0; 
-            font-size: 1.8rem; 
-            letter-spacing: 4px; 
-            font-weight: 700;
-            color: var(--jp-dark);
-        }
-        .phone-btn { 
-            display: inline-block; 
-            background: var(--jp-red); 
-            color: white; 
-            padding: 10px 30px; 
-            border-radius: 2px; /* 捨棄圓角，改用直角更有職人感 */
-            text-decoration: none; 
-            font-weight: bold; 
-            margin-top: 20px; 
-            font-size: 1rem;
-            letter-spacing: 1px;
-            transition: 0.3s;
-        }
-        .container { max-width: 650px; margin: 30px auto; padding: 0 20px; }
-        section { 
-            margin-bottom: 40px; 
-            border: 1px solid var(--jp-border);
-            background: white;
-            padding: 10px;
-        }
-        h2 { 
-            text-align: center;
-            font-size: 1.3rem;
-            margin: 10px 0 20px 0;
-            padding-bottom: 10px;
-            border-bottom: 1px double var(--jp-border);
-            letter-spacing: 2px;
-            color: var(--jp-red);
-        }
-        .item { 
-            display: flex; 
-            justify-content: space-between; 
-            padding: 15px 10px; 
-            border-bottom: 1px solid var(--jp-beige);
-            align-items: flex-start;
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background: var(--bg); color: #333; }
+        header { background: var(--navy); color: white; text-align: center; padding: 30px 15px; position: sticky; top: 0; z-index: 1000; border-bottom: 3px solid var(--gold); }
+        h1 { margin: 0; font-size: 1.6rem; letter-spacing: 1px; text-transform: uppercase; }
+        .phone-btn { display: inline-block; background: var(--gold); color: white; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 15px; font-size: 1.1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .container { max-width: 700px; margin: auto; padding: 15px; }
+        section { background: white; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden; }
+        h2 { background: var(--navy); color: var(--gold); margin: 0; padding: 15px 20px; font-size: 1.2rem; text-transform: uppercase; }
+        .item { display: flex; justify-content: space-between; padding: 18px 20px; border-bottom: 1px solid #eee; align-items: flex-start; }
         .item:last-child { border-bottom: none; }
-        .info { flex: 1; padding-right: 15px; }
-        .name { font-weight: bold; display: block; margin-bottom: 5px; font-size: 1.1rem; }
-        .desc { font-size: 0.85rem; color: #777; font-style: italic; }
-        .price { font-weight: bold; font-size: 1.1rem; color: var(--jp-dark); }
-        footer { 
-            text-align: center; 
-            padding: 50px 20px; 
-            background: white;
-            border-top: 1px solid var(--jp-border);
-            color: #999;
-            font-size: 0.8rem;
-        }
+        .name { font-weight: bold; display: block; margin-bottom: 5px; font-size: 1.05rem; color: #111; }
+        .desc { font-size: 0.85rem; color: #666; font-style: italic; line-height: 1.4; }
+        .price { font-weight: bold; color: var(--navy); font-size: 1.15rem; min-width: 75px; text-align: right; }
+        footer { text-align: center; padding: 40px 20px; color: #888; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Allan’s Table</h1>
-    <div style="font-size: 0.9rem; letter-spacing: 3px; color: #888; margin-top: 5px;">ON WHEELS</div>
-    <a href="tel:8504172314" class="phone-btn">御注文: 850-417-2314</a>
+    <h1>Allan’s Table On Wheels</h1>
+    <a href="tel:8504172314" class="phone-btn">📞 Call: 850-417-2314</a>
 </header>
 
 <div class="container">
     <section>
-        <h2>寿し | Sushi Bar</h2>
+        <h2>Sushi Bar</h2>
         <div class="item"><div class="info"><span class="name">CHIRASHI SUSHI / UNAGI BOWL</span></div><div class="price">$23.95</div></div>
         <div class="item"><div class="info"><span class="name">SPRING SUSHI (RAW)</span><span class="desc">7 pcs nigiri, 8 pcs California roll.</span></div><div class="price">$24.95</div></div>
         <div class="item"><div class="info"><span class="name">SASHIMI REGULAR (RAW)</span><span class="desc">12 pieces of select fillets.</span></div><div class="price">$28.95</div></div>
         <div class="item"><div class="info"><span class="name">SUMMER SUSHI (RAW)</span><span class="desc">9 pcs nigiri, 8 pcs crunchy shrimp roll.</span></div><div class="price">$30.95</div></div>
-        <div class="item"><div class="info"><span class="name">SASHIMI DELUXE (RAW)</span><span class="desc">16 pieces of select fillets.</span></div><div class="price">$38.95</div></div>
     </section>
 
     <section>
-        <h2>一品料理 | Entrees</h2>
+        <h2>Entrees</h2>
         <div class="item"><div class="info"><span class="name">PAN FRIED TOFU</span><span class="desc">Soft tofu pan fried in garlic + butter.</span></div><div class="price">$16.95</div></div>
-        <div class="item"><div class="info"><span class="name">FUJI PORK BELLY / GENERAL TSO / MAPO TOFU / TONKOTSU</span></div><div class="price">$17.95</div></div>
+        <div class="item"><div class="info"><span class="name">FUJI PORK BELLY / GENERAL TSO / MAPO TOFU</span></div><div class="price">$17.95</div></div>
         <div class="item"><div class="info"><span class="name">MONGOLIAN BEEF / BULGOGI / GYUDON BEEF</span></div><div class="price">$19.95</div></div>
-        <div class="item"><div class
+        <div class="item"><div class="info"><span class="name">GALBI BIBIMBAP / PORK or BEEF BIBIMBAP</span></div><div class="price">$20.95</div></div>
+    </section>
+
+    <section>
+        <h2>Regular Rolls (8 pcs)</h2>
+        <div class="item"><div class="info"><span class="name">CALIFORNIA ROLL (COOKED)</span><span class="desc">Crab stick, avocado, cucumber, masago.</span></div><div class="price">$9.95</div></div>
+        <div class="item"><div class="info"><span class="name">SHRIMP TEMPURA / SPICY TUNA / PHILADELPHIA</span></div><div class="price">$10.95</div></div>
+        <div class="item"><div class="info"><span class="name">SURF + TURF ROLL (COOKED)</span><span class="desc">Steak, tempura shrimp, eel sauce.</span></div><div class="price">$11.95</div></div>
+        <div class="item"><div class="info"><span class="name">BOSTON ROLL (RAW)</span><span class="desc">Tuna, avocado, crab stick, cream cheese.</span></div><div class="price">$12.95</div></div>
+    </section>
+
+    <section>
+        <h2>Soup & Noodles</h2>
+        <div class="item"><div class="info"><span class="name">MISO SOUP / CLEAR SOUP</span></div><div class="price">$9.95</div></div>
+        <div class="item"><div class="info"><span class="name">FRIED RICE (CHICKEN, PORK, BEEF)</span></div><div class="price">$14.95</div></div>
+        <div class="item"><div class="info"><span class="name">TAIPEI BEEF NOODLE</span></div><div class="price">$15.95</div></div>
+        <div class="item"><div class="info"><span class="name">RAMEN / YAKISOBA / UDON</span></div><div class="price">$16.95</div></div>
+    </section>
+</div>
+
+<footer>
+    <p>© 2026 Allan’s Table On Wheels | Pensacola, FL</p>
+</footer>
+
+</body>
+</html>
