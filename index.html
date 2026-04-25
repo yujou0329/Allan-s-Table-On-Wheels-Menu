@@ -4,96 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Allan’s Table On Wheels | Menu</title>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
     <style>
         :root { 
-            --navy: #002147; 
+            --vibrant-blue: #004aad; /* 接近名片的活潑藍 */
             --gold: #d4af37; 
-            --bg: #f0f2f5; 
+            --white: #ffffff;
+            --bg: #f0f5ff; 
         }
-        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; margin: 0; background: var(--bg); color: #333; }
+        body { font-family: 'Quicksand', sans-serif; margin: 0; background: var(--bg); color: #333; }
+        
         header { 
-            background: var(--navy); 
+            background: var(--vibrant-blue); 
             color: white; 
             text-align: center; 
-            padding: 35px 15px; 
+            padding: 40px 15px; 
             position: sticky; 
             top: 0; 
             z-index: 1000; 
-            border-bottom: 4px solid var(--gold);
+            border-bottom: 5px solid var(--gold);
+            border-radius: 0 0 20px 20px;
         }
-        
-        /* 個性化標題樣式 */
+
+        /* 名片風格字型 */
         header h1 { 
             margin: 0; 
-            font-family: 'Pacifico', cursive; /* 手寫個性化字型 */
-            font-size: 2.5rem; 
-            color: var(--gold);
-            text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+            font-family: 'Fredoka', sans-serif; 
+            font-size: 2.8rem; 
+            font-weight: 700;
             letter-spacing: 1px;
+            text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
         }
         .sub-title { 
-            font-family: 'Montserrat', sans-serif; 
-            font-size: 0.9rem; 
-            letter-spacing: 5px; 
-            color: white; 
+            font-family: 'Fredoka', sans-serif;
+            font-size: 1.2rem; 
+            color: var(--white); 
             margin-top: 5px;
-            text-transform: uppercase;
         }
 
         .phone-btn { 
             display: inline-block; 
-            background: var(--gold); 
+            background: #ff5757; /* 顯眼的紅色按鈕 */
             color: white; 
             padding: 12px 30px; 
             border-radius: 50px; 
             text-decoration: none; 
             font-weight: bold; 
             margin-top: 20px; 
-            font-size: 1.1rem; 
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            transition: 0.3s;
+            font-size: 1.2rem; 
+            box-shadow: 0 4px 0px #c43e3e;
+            transition: 0.2s;
         }
-        .container { max-width: 700px; margin: auto; padding: 15px; }
-        section { background: white; margin-bottom: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); overflow: hidden; border: 1px solid #ddd; }
-        h2 { background: var(--navy); color: var(--gold); margin: 0; padding: 15px 20px; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 2px; }
-        .item { display: flex; justify-content: space-between; padding: 18px 20px; border-bottom: 1px solid #eee; align-items: flex-start; }
+        .phone-btn:active { transform: translateY(3px); box-shadow: none; }
+
+        .container { max-width: 750px; margin: auto; padding: 15px; }
+        
+        section { 
+            background: white; 
+            margin-bottom: 25px; 
+            border-radius: 20px; 
+            box-shadow: 0 8px 0px rgba(0,74,173,0.1); 
+            overflow: hidden; 
+            border: 2px solid #eef2f7; 
+        }
+
+        h2 { 
+            background: var(--vibrant-blue); 
+            color: white; 
+            margin: 0; 
+            padding: 15px 20px; 
+            font-size: 1.4rem; 
+            font-family: 'Fredoka', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .item { display: flex; justify-content: space-between; padding: 18px 20px; border-bottom: 1px dashed #eee; align-items: flex-start; }
         .item:last-child { border-bottom: none; }
-        .name { font-weight: bold; display: block; margin-bottom: 5px; font-size: 1.1rem; color: #111; }
-        .desc { font-size: 0.85rem; color: #666; font-style: italic; line-height: 1.4; }
-        .price { font-weight: bold; color: var(--navy); font-size: 1.2rem; min-width: 75px; text-align: right; }
-        footer { text-align: center; padding: 40px 20px; color: #888; font-size: 0.9rem; }
+        
+        .name { font-weight: 700; display: block; margin-bottom: 5px; font-size: 1.1rem; color: var(--vibrant-blue); }
+        .desc { font-size: 0.9rem; color: #666; line-height: 1.4; }
+        .price { font-weight: 700; color: #ff5757; font-size: 1.3rem; min-width: 75px; text-align: right; font-family: 'Fredoka', sans-serif; }
+        
+        footer { text-align: center; padding: 40px 20px; color: #888; font-family: 'Fredoka', sans-serif; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Allan’s Table</h1>
-    <div class="sub-title">ON WHEELS</div>
-    <a href="tel:8504172314" class="phone-btn">📞 Call: 850-417-2314</a>
+    <div class="sub-title">On Wheels EATERY</div>
+    <a href="tel:8504172314" class="phone-btn">📞 850-417-2314</a>
 </header>
 
 <div class="container">
     <section>
-        <h2>Sushi Bar</h2>
+        <h2>🍣 Sushi Bar</h2>
         <div class="item"><div class="info"><span class="name">CHIRASHI SUSHI / UNAGI BOWL</span></div><div class="price">$23.95</div></div>
-        <div class="item"><div class="info"><span class="name">SPRING SUSHI (RAW)</span><span class="desc">7 pcs nigiri, 8 pcs California roll.</span></div><div class="price">$24.95</div></div>
-        <div class="item"><div class="info"><span class="name">SASHIMI REGULAR (RAW)</span><span class="desc">12 pieces of select fillets.</span></div><div class="price">$28.95</div></div>
-        <div class="item"><div class="info"><span class="name">SUMMER SUSHI (RAW)</span><span class="desc">9 pcs nigiri, 8 pcs crunchy shrimp roll.</span></div><div class="price">$30.95</div></div>
+        <div class="item"><div class="info"><span class="name">SPRING SUSHI (RAW)</span><span class="desc">7 pcs nigiri + California roll.</span></div><div class="price">$24.95</div></div>
+        <div class="item"><div class="info"><span class="name">SASHIMI REGULAR (RAW)</span><span class="desc">12 pieces select fillets.</span></div><div class="price">$28.95</div></div>
+        <div class="item"><div class="info"><span class="name">SUMMER SUSHI (RAW)</span><span class="desc">9 pcs nigiri + crunchy shrimp roll.</span></div><div class="price">$30.95</div></div>
     </section>
 
     <section>
-        <h2>Entrees</h2>
-        <div class="item"><div class="info"><span class="name">PAN FRIED TOFU</span><span class="desc">Soft tofu pan fried in garlic + butter.</span></div><div class="price">$16.95</div></div>
-        <div class="item"><div class="info"><span class="name">FUJI PORK BELLY / GENERAL TSO / MAPO TOFU</span></div><div class="price">$17.95</div></div>
-        <div class="item"><div class="info"><span class="name">MONGOLIAN BEEF / BULGOGI / GYUDON BEEF</span></div><div class="price">$19.95</div></div>
+        <h2>🍱 Entrees</h2>
+        <div class="item"><div class="info"><span class="name">PAN FRIED TOFU</span><span class="desc">Fried in garlic & butter.</span></div><div class="price">$16.95</div></div>
+        <div class="item"><div class="info"><span class="name">FUJI PORK BELLY / GENERAL TSO / TONKOTSU</span></div><div class="price">$17.95</div></div>
+        <div class="item"><div class="info"><span class="name">MONGOLIAN BEEF / BULGOGI</span></div><div class="price">$19.95</div></div>
+        <div class="item"><div class="info"><span class="name">GALBI BIBIMBAP / PORK or BEEF BIBIMBAP</span></div><div class="price">$20.95</div></div>
     </section>
 
     <section>
-        <h2>Regular Rolls</h2>
+        <h2>🍥 Regular Rolls</h2>
         <div class="item"><div class="info"><span class="name">CALIFORNIA ROLL (COOKED)</span><span class="desc">Crab stick, avocado, cucumber, masago.</span></div><div class="price">$9.95</div></div>
-        <div class="item"><div class="info"><span class="name">SHRIMP TEMPURA / SPICY TUNA / PHILADELPHIA</span></div><div class="price">$10.95</div></div>
+        <div class="item"><div class="info"><span class="name">TIGER EYE / SHRIMP TEMPURA / SPICY TUNA</span></div><div class="price">$10.95</div></div>
         <div class="item"><div class="info"><span class="name">BOSTON ROLL (RAW)</span><span class="desc">Tuna, avocado, crab stick, cream cheese.</span></div><div class="price">$12.95</div></div>
+    </section>
+
+    <section>
+        <h2>🍜 Soup & Noodles</h2>
+        <div class="item"><div class="info"><span class="name">MISO SOUP / CLEAR SOUP</span></div><div class="price">$9.95</div></div>
+        <div class="item"><div class="info"><span class="name">FRIED RICE (CHICKEN, PORK, BEEF)</span></div><div class="price">$14.95</div></div>
+        <div class="item"><div class="info"><span class="name">TAIPEI BEEF NOODLE</span></div><div class="price">$15.95</div></div>
+        <div class="item"><div class="info"><span class="name">RAMEN / YAKISOBA / UDON</span></div><div class="price">$16.95</div></div>
     </section>
 </div>
 
