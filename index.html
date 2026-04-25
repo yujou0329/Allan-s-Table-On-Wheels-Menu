@@ -3,42 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allan’s Table On Wheels</title>
+    <title>Allan’s Table On Wheels | Menu</title>
     <style>
-        :root { --dark: #0c1a25; --gold: #d4af37; --bg: #f8f9fa; }
-        body { font-family: -apple-system, sans-serif; margin: 0; background: var(--bg); color: #333; }
-        header { background: var(--dark); color: white; text-align: center; padding: 25px 15px; position: sticky; top: 0; }
-        h1 { margin: 0; font-size: 1.5rem; letter-spacing: 1px; }
-        .phone-btn { display: inline-block; background: var(--gold); color: var(--dark); padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 15px; }
-        .container { max-width: 600px; margin: auto; padding: 15px; }
-        section { background: white; margin-bottom: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); overflow: hidden; }
-        h2 { background: var(--dark); color: var(--gold); margin: 0; padding: 12px 15px; font-size: 1.1rem; }
-        .item { display: flex; justify-content: space-between; padding: 15px; border-bottom: 1px solid #eee; }
+        :root {
+            --jp-red: #c0392b; /* 朱紅 */
+            --jp-dark: #2f2f2f; /* 消炭色 */
+            --jp-beige: #fdfaf5; /* 鳥子色 - 帶紙質感的米白 */
+            --jp-border: #e0d8cc;
+        }
+        body { 
+            font-family: "Hiragino Mincho ProN", "MS PMincho", serif; /* 優先使用明體，更有日式書卷感 */
+            margin: 0; 
+            background-color: var(--jp-beige); 
+            color: var(--jp-dark);
+            line-height: 1.6;
+        }
+        header { 
+            background: white; 
+            text-align: center; 
+            padding: 40px 20px; 
+            border-bottom: 3px solid var(--jp-red);
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+        h1 { 
+            margin: 0; 
+            font-size: 1.8rem; 
+            letter-spacing: 4px; 
+            font-weight: 700;
+            color: var(--jp-dark);
+        }
+        .phone-btn { 
+            display: inline-block; 
+            background: var(--jp-red); 
+            color: white; 
+            padding: 10px 30px; 
+            border-radius: 2px; /* 捨棄圓角，改用直角更有職人感 */
+            text-decoration: none; 
+            font-weight: bold; 
+            margin-top: 20px; 
+            font-size: 1rem;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+        .container { max-width: 650px; margin: 30px auto; padding: 0 20px; }
+        section { 
+            margin-bottom: 40px; 
+            border: 1px solid var(--jp-border);
+            background: white;
+            padding: 10px;
+        }
+        h2 { 
+            text-align: center;
+            font-size: 1.3rem;
+            margin: 10px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px double var(--jp-border);
+            letter-spacing: 2px;
+            color: var(--jp-red);
+        }
+        .item { 
+            display: flex; 
+            justify-content: space-between; 
+            padding: 15px 10px; 
+            border-bottom: 1px solid var(--jp-beige);
+            align-items: flex-start;
+        }
         .item:last-child { border-bottom: none; }
-        .name { font-weight: bold; display: block; margin-bottom: 4px; }
-        .desc { font-size: 0.85rem; color: #666; font-style: italic; line-height: 1.3; }
-        .price { font-weight: bold; color: var(--dark); margin-left: 10px; font-size: 1.1rem; }
+        .info { flex: 1; padding-right: 15px; }
+        .name { font-weight: bold; display: block; margin-bottom: 5px; font-size: 1.1rem; }
+        .desc { font-size: 0.85rem; color: #777; font-style: italic; }
+        .price { font-weight: bold; font-size: 1.1rem; color: var(--jp-dark); }
+        footer { 
+            text-align: center; 
+            padding: 50px 20px; 
+            background: white;
+            border-top: 1px solid var(--jp-border);
+            color: #999;
+            font-size: 0.8rem;
+        }
     </style>
 </head>
 <body>
+
 <header>
-    <h1>Allan’s Table On Wheels</h1>
-    <a href="tel:8504172314" class="phone-btn">📞 Call: 850-417-2314</a>
+    <h1>Allan’s Table</h1>
+    <div style="font-size: 0.9rem; letter-spacing: 3px; color: #888; margin-top: 5px;">ON WHEELS</div>
+    <a href="tel:8504172314" class="phone-btn">御注文: 850-417-2314</a>
 </header>
+
 <div class="container">
     <section>
-        <h2>Regular Rolls (8 pcs)</h2>
-        <div class="item"><div><span class="name">CALIFORNIA ROLL (COOKED)</span><span class="desc">Crab stick, avocado, cucumber, masago.</span></div><div class="price">$9.95</div></div>
-        <div class="item"><div><span class="name">TIGER EYE ROLL (RAW)</span><span class="desc">Tuna, crab stick + avocado.</span></div><div class="price">$10.95</div></div>
-        <div class="item"><div><span class="name">SHRIMP TEMPURA ROLL (COOKED)</span><span class="desc">Fried shrimp, eel sauce, spicy mayo.</span></div><div class="price">$10.95</div></div>
-        <div class="item"><div><span class="name">BOSTON ROLL (RAW)</span><span class="desc">Tuna, avocado, crab stick w/ cream cheese.</span></div><div class="price">$12.95</div></div>
+        <h2>寿し | Sushi Bar</h2>
+        <div class="item"><div class="info"><span class="name">CHIRASHI SUSHI / UNAGI BOWL</span></div><div class="price">$23.95</div></div>
+        <div class="item"><div class="info"><span class="name">SPRING SUSHI (RAW)</span><span class="desc">7 pcs nigiri, 8 pcs California roll.</span></div><div class="price">$24.95</div></div>
+        <div class="item"><div class="info"><span class="name">SASHIMI REGULAR (RAW)</span><span class="desc">12 pieces of select fillets.</span></div><div class="price">$28.95</div></div>
+        <div class="item"><div class="info"><span class="name">SUMMER SUSHI (RAW)</span><span class="desc">9 pcs nigiri, 8 pcs crunchy shrimp roll.</span></div><div class="price">$30.95</div></div>
+        <div class="item"><div class="info"><span class="name">SASHIMI DELUXE (RAW)</span><span class="desc">16 pieces of select fillets.</span></div><div class="price">$38.95</div></div>
     </section>
+
     <section>
-        <h2>Entrees</h2>
-        <div class="item"><div><span class="name">PAN FRIED TOFU</span><span class="desc">Soft tofu pan fried in garlic + butter.</span></div><div class="price">$16.95</div></div>
-        <div class="item"><div><span class="name">FUJI PORK BELLY</span><span class="desc">Roasted pork belly with stir fried vegetables.</span></div><div class="price">$17.95</div></div>
-        <div class="item"><div><span class="name">KOREAN BEEF BULGOGI</span><span class="desc">Classic marinated style beef.</span></div><div class="price">$19.95</div></div>
-    </section>
-</div>
-</body>
-</html>
+        <h2>一品料理 | Entrees</h2>
+        <div class="item"><div class="info"><span class="name">PAN FRIED TOFU</span><span class="desc">Soft tofu pan fried in garlic + butter.</span></div><div class="price">$16.95</div></div>
+        <div class="item"><div class="info"><span class="name">FUJI PORK BELLY / GENERAL TSO / MAPO TOFU / TONKOTSU</span></div><div class="price">$17.95</div></div>
+        <div class="item"><div class="info"><span class="name">MONGOLIAN BEEF / BULGOGI / GYUDON BEEF</span></div><div class="price">$19.95</div></div>
+        <div class="item"><div class
