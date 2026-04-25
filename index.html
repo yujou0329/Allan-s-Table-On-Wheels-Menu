@@ -15,7 +15,7 @@
         .contact-row { margin-top: 15px; font-size: 0.9rem; }
         .contact-row a { color: var(--gold); text-decoration: none; font-weight: bold; }
         .container { max-width: 750px; margin: auto; padding: 10px; display: block; }
-        section { background: white; margin-bottom: 20px; border-radius: 15px; box-shadow: 0 5px 0px rgba(0,74,173,0.05); overflow: hidden; border: 1px solid #eef2f7; }
+        section { background: white; margin-bottom: 20px; border-radius: 15px; box-shadow: 0 5px 0px rgba(0,74,173,0.05); overflow: hidden; border: 1px solid #eef2f7; display: block; }
         h2 { background: var(--vibrant-blue); color: white; margin: 0; padding: 12px 15px; font-size: 1.1rem; font-family: 'Fredoka', sans-serif; }
         .item { display: flex; justify-content: space-between; padding: 15px; border-bottom: 1px dashed #eee; align-items: flex-start; }
         .item:last-child { border-bottom: none; }
@@ -38,22 +38,12 @@
 
 <div class="container">
     <section>
-        <h2>🍣 Sushi Nigiri & Sashimi (2 pcs)</h2>
-        <div class="item"><div class="info"><span class="name">INARI (TOFU SKIN)</span></div><div class="price">$5.95</div></div>
-        <div class="item"><div class="info"><span class="name">TAMAGO / SALMON / WHITE TUNA / ROE / SPICY TUNA</span></div><div class="price">$6.95</div></div>
-        <div class="item"><div class="info"><span class="name">TUNA / YELLOWTAIL / EEL / SCALLOP / SMOKED SALMON</span></div><div class="price">$7.45</div></div>
-    </section>
-
-    <section>
-        <h2>🍜 Soup & Noodles</h2>
-        <div class="item"><div class="info"><span class="name">HOT + SOUR SOUP / VEGETABLE SOUP</span></div><div class="price">$6.95</div></div>
-        <div class="item"><div class="info"><span class="name">MISO SOUP / CLEAR SOUP</span></div><div class="price">$9.95</div></div>
-        <div class="item"><div class="info"><span class="name">WONTON SOUP</span></div><div class="price">$11.95</div></div>
-        <div class="item"><div class="info"><span class="name">FRIED RICE (CHICKEN, PORK, BEEF)</span></div><div class="price">$14.95</div></div>
-        <div class="item"><div class="info"><span class="name">TAIPEI BEEF NOODLE</span><span class="desc">Traditional slow-cooked beef noodle soup.</span></div><div class="price">$15.95</div></div>
-        <div class="item"><div class="info"><span class="name">RAMEN / SHRIMP FRIED RICE / YAKISOBA / UDON</span></div><div class="price">$16.95</div></div>
-        <div class="item"><div class="info"><span class="name">JAPCHAE NOODLE</span><span class="desc">Stir-fried glass noodles with beef and vegetables.</span></div><div class="price">$17.95</div></div>
-        <div class="item"><div class="info"><span class="name">GALBI TANG</span><span class="desc">Beef short rib soup with bulgogi and glass noodles.</span></div><div class="price">$20.95</div></div>
+        <h2>⭐ Sushi Bar Specials</h2>
+        <div class="item"><div class="info"><span class="name">CHIRASHI SUSHI / UNAGI BOWL</span></div><div class="price">$23.95</div></div>
+        <div class="item"><div class="info"><span class="name">SPRING SUSHI (RAW)</span><span class="desc">7 pcs nigiri & 8 pcs California roll.</span></div><div class="price">$24.95</div></div>
+        <div class="item"><div class="info"><span class="name">SASHIMI REGULAR (RAW)</span><span class="desc">12 pieces of select fillets.</span></div><div class="price">$28.95</div></div>
+        <div class="item"><div class="info"><span class="name">SUMMER SUSHI (RAW)</span><span class="desc">9 pcs nigiri & 8 pcs crunchy shrimp roll.</span></div><div class="price">$30.95</div></div>
+        <div class="item"><div class="info"><span class="name">SASHIMI DELUXE (RAW)</span><span class="desc">16 pieces of select fillets.</span></div><div class="price">$38.95</div></div>
     </section>
 
     <section>
@@ -62,6 +52,13 @@
         <div class="item"><div class="info"><span class="name">SHRIMP TEMPURA / SPICY TUNA / TIGER EYE / ALASKAN / PHILADELPHIA / COWBOY / SALMON SKIN / NEW YORK</span></div><div class="price">$10.95</div></div>
         <div class="item"><div class="info"><span class="name">SURF + TURF ROLL (COOKED)</span><span class="desc">Cream cheese, grilled steak, and tempura shrimp.</span></div><div class="price">$11.95</div></div>
         <div class="item"><div class="info"><span class="name">BOSTON ROLL (RAW)</span><span class="desc">Tuna, avocado, crab stick with cream cheese.</span></div><div class="price">$12.95</div></div>
+    </section>
+
+    <section>
+        <h2>🍣 Sushi Nigiri & Sashimi (2 pcs)</h2>
+        <div class="item"><div class="info"><span class="name">INARI (TOFU SKIN)</span></div><div class="price">$5.95</div></div>
+        <div class="item"><div class="info"><span class="name">TAMAGO / SALMON / WHITE TUNA / ROE / SPICY TUNA</span></div><div class="price">$6.95</div></div>
+        <div class="item"><div class="info"><span class="name">TUNA / YELLOWTAIL / EEL / SCALLOP / SMOKED SALMON</span></div><div class="price">$7.45</div></div>
     </section>
 
     <section>
@@ -76,16 +73,19 @@
         <div class="item"><div class="info"><span class="name">PAN FRIED TOFU</span><span class="desc">Soft tofu pan fried in garlic and butter.</span></div><div class="price">$16.95</div></div>
         <div class="item"><div class="info"><span class="name">FUJI PORK BELLY / GENERAL TSO / MAPO TOFU / TONKOTSU</span></div><div class="price">$17.95</div></div>
         <div class="item"><div class="info"><span class="name">MONGOLIAN BEEF / BULGOGI / GYUDON BEEF</span></div><div class="price">$19.95</div></div>
-        <div class="item"><div class="info"><span class="name">GALBI BIBIMBAP / PORK or BEEF BIBIMBAP</span><span class="desc">Assorted vegetables and egg in hot bowl.</span></div><div class="price">$20.95</div></div>
+        <div class="item"><div class="info"><span class="name">GALBI BIBIMBAP / PORK or BEEF BIBIMBAP</span><span class="desc">Assorted vegetables and egg in hot stone bowl.</span></div><div class="price">$20.95</div></div>
     </section>
 
     <section>
-        <h2>⭐ Sushi Bar Specials</h2>
-        <div class="item"><div class="info"><span class="name">CHIRASHI SUSHI / UNAGI BOWL</span></div><div class="price">$23.95</div></div>
-        <div class="item"><div class="info"><span class="name">SPRING SUSHI (RAW)</span><span class="desc">7 pcs nigiri & 8 pcs California roll.</span></div><div class="price">$24.95</div></div>
-        <div class="item"><div class="info"><span class="name">SASHIMI REGULAR (RAW)</span><span class="desc">12 pieces of select fillets.</span></div><div class="price">$28.95</div></div>
-        <div class="item"><div class="info"><span class="name">SUMMER SUSHI (RAW)</span><span class="desc">9 pcs nigiri & 8 pcs crunchy shrimp roll.</span></div><div class="price">$30.95</div></div>
-        <div class="item"><div class="info"><span class="name">SASHIMI DELUXE (RAW)</span><span class="desc">16 pieces of select fillets.</span></div><div class="price">$38.95</div></div>
+        <h2>🍜 Soup & Noodles</h2>
+        <div class="item"><div class="info"><span class="name">HOT + SOUR SOUP / VEGETABLE SOUP</span></div><div class="price">$6.95</div></div>
+        <div class="item"><div class="info"><span class="name">MISO SOUP / CLEAR SOUP</span></div><div class="price">$9.95</div></div>
+        <div class="item"><div class="info"><span class="name">WONTON SOUP</span></div><div class="price">$11.95</div></div>
+        <div class="item"><div class="info"><span class="name">FRIED RICE (CHICKEN, PORK, BEEF)</span></div><div class="price">$14.95</div></div>
+        <div class="item"><div class="info"><span class="name">TAIPEI BEEF NOODLE</span><span class="desc">Traditional slow-cooked beef noodle soup.</span></div><div class="price">$15.95</div></div>
+        <div class="item"><div class="info"><span class="name">RAMEN / SHRIMP FRIED RICE / YAKISOBA / UDON</span></div><div class="price">$16.95</div></div>
+        <div class="item"><div class="info"><span class="name">JAPCHAE NOODLE</span><span class="desc">Stir-fried glass noodles with beef and vegetables.</span></div><div class="price">$17.95</div></div>
+        <div class="item"><div class="info"><span class="name">GALBI TANG</span><span class="desc">Beef short rib soup with bulgogi and glass noodles.</span></div><div class="price">$20.95</div></div>
     </section>
 </div>
 
