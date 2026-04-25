@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allan’s Table On Wheels | Full Menu</title>
+    <title>Allan’s Table On Wheels | Order Online</title>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
     <style>
-        :root { --vibrant-blue: #004aad; --gold: #d4af37; --bg: #f0f5ff; }
+        :root { --vibrant-blue: #004aad; --gold: #d4af37; --bg: #f0f5ff; --order-red: #ff5757; }
         body { font-family: 'Quicksand', sans-serif; margin: 0; background: var(--bg); color: #333; -webkit-text-size-adjust: 100%; }
         
         header { 
             background: var(--vibrant-blue); 
             color: white; 
             text-align: center; 
-            padding: 20px 10px; 
+            padding: 25px 10px; 
             position: sticky; 
             top: 0; 
             z-index: 1000; 
@@ -21,32 +21,32 @@
             border-radius: 0 0 15px 15px; 
         }
 
-        /* 手機版縮小字體 */
-        header h1 { 
-            margin: 0; 
-            font-family: 'Fredoka', sans-serif; 
-            font-size: 1.8rem; /* 從 2.8 縮小到 1.8，適合手機螢幕 */
-            font-weight: 700; 
-        }
-        .sub-title { font-family: 'Fredoka', sans-serif; font-size: 0.9rem; margin-top: 5px; }
+        header h1 { margin: 0; font-family: 'Fredoka', sans-serif; font-size: 1.8rem; font-weight: 700; }
+        .sub-title { font-family: 'Fredoka', sans-serif; font-size: 0.9rem; margin-top: 5px; opacity: 0.9; }
 
-        .phone-btn { 
+        /* 點餐按鈕 */
+        .order-btn { 
             display: inline-block; 
-            background: #ff5757; 
+            background: var(--order-red); 
             color: white; 
-            padding: 10px 25px; 
+            padding: 12px 35px; 
             border-radius: 50px; 
             text-decoration: none; 
             font-weight: bold; 
             margin-top: 15px; 
-            font-size: 1rem; 
-            box-shadow: 0 3px 0px #c43e3e; 
+            font-size: 1.2rem; 
+            font-family: 'Fredoka', sans-serif;
+            box-shadow: 0 4px 0px #c43e3e;
+            transition: 0.2s;
         }
+        .order-btn:active { transform: translateY(3px); box-shadow: none; }
+
+        .contact-row { margin-top: 15px; font-size: 0.9rem; }
+        .contact-row a { color: var(--gold); text-decoration: none; font-weight: bold; }
 
         .container { max-width: 750px; margin: auto; padding: 10px; }
         section { background: white; margin-bottom: 20px; border-radius: 15px; box-shadow: 0 5px 0px rgba(0,74,173,0.05); overflow: hidden; border: 1px solid #eef2f7; }
         
-        /* 分類標題手機優化 */
         h2 { background: var(--vibrant-blue); color: white; margin: 0; padding: 12px 15px; font-size: 1.1rem; font-family: 'Fredoka', sans-serif; }
         
         .item { display: flex; justify-content: space-between; padding: 15px; border-bottom: 1px dashed #eee; align-items: flex-start; }
@@ -55,14 +55,13 @@
         .info { flex: 1; padding-right: 10px; }
         .name { font-weight: 700; display: block; margin-bottom: 3px; font-size: 1rem; color: var(--vibrant-blue); line-height: 1.2; }
         .desc { font-size: 0.8rem; color: #666; line-height: 1.3; font-style: italic; }
-        
-        /* 價格縮小並確保不會換行 */
-        .price { font-weight: 700; color: #ff5757; font-size: 1.1rem; min-width: 65px; text-align: right; font-family: 'Fredoka', sans-serif; }
+        .price { font-weight: 700; color: var(--order-red); font-size: 1.1rem; min-width: 65px; text-align: right; font-family: 'Fredoka', sans-serif; }
 
         @media (min-width: 600px) {
             header h1 { font-size: 2.5rem; }
             h2 { font-size: 1.3rem; }
             .name { font-size: 1.1rem; }
+            .order-btn { font-size: 1.4rem; padding: 15px 50px; }
         }
 
         footer { text-align: center; padding: 30px 20px; color: #888; font-size: 0.8rem; font-family: 'Fredoka', sans-serif; }
@@ -73,7 +72,10 @@
 <header>
     <h1>Allan’s Table</h1>
     <div class="sub-title">On Wheels EATERY</div>
-    <a href="tel:8504172314" class="phone-btn">📞 850-417-2314</a>
+    <a href="https://allanstableonwheels.square.site" class="order-btn">🛒 ORDER NOW</a>
+    <div class="contact-row">
+        <a href="tel:8504172314">📞 850-417-2314</a>
+    </div>
 </header>
 
 <div class="container">
@@ -81,58 +83,4 @@
         <h2>🍣 Sushi Nigiri & Sashimi (2 pcs)</h2>
         <div class="item"><div class="info"><span class="name">INARI (TOFU SKIN)</span></div><div class="price">$5.95</div></div>
         <div class="item"><div class="info"><span class="name">TAMAGO / SALMON / WHITE TUNA / ROE / SPICY TUNA</span></div><div class="price">$6.95</div></div>
-        <div class="item"><div class="info"><span class="name">TUNA / YELLOWTAIL / EEL / SCALLOP / SMOKED SALMON</span></div><div class="price">$7.45</div></div>
-    </section>
-
-    <section>
-        <h2>🍜 Soup & Noodles</h2>
-        <div class="item"><div class="info"><span class="name">HOT + SOUR SOUP / VEGETABLE SOUP</span></div><div class="price">$6.95</div></div>
-        <div class="item"><div class="info"><span class="name">MISO SOUP / CLEAR SOUP</span></div><div class="price">$9.95</div></div>
-        <div class="item"><div class="info"><span class="name">WONTON SOUP</span></div><div class="price">$11.95</div></div>
-        <div class="item"><div class="info"><span class="name">FRIED RICE (CHICKEN, PORK, BEEF)</span></div><div class="price">$14.95</div></div>
-        <div class="item"><div class="info"><span class="name">TAIPEI BEEF NOODLE</span><span class="desc">Traditional slow-cooked beef noodle soup.</span></div><div class="price">$15.95</div></div>
-        <div class="item"><div class="info"><span class="name">RAMEN / SHRIMP FRIED RICE / YAKISOBA / UDON</span></div><div class="price">$16.95</div></div>
-        <div class="item"><div class="info"><span class="name">JAPCHAE NOODLE</span><span class="desc">Stir-fried glass noodles with beef and vegetables.</span></div><div class="price">$17.95</div></div>
-        <div class="item"><div class="info"><span class="name">GALBI TANG</span><span class="desc">Beef short rib soup with bulgogi and glass noodles.</span></div><div class="price">$20.95</div></div>
-    </section>
-
-    <section>
-        <h2>🍥 Regular Rolls (8 pcs)</h2>
-        <div class="item"><div class="info"><span class="name">CALIFORNIA ROLL (COOKED)</span><span class="desc">Crab stick, avocado, cucumber, masago.</span></div><div class="price">$9.95</div></div>
-        <div class="item"><div class="info"><span class="name">SHRIMP TEMPURA / SPICY TUNA / TIGER EYE / ALASKAN / PHILADELPHIA / COWBOY / SALMON SKIN / NEW YORK</span></div><div class="price">$10.95</div></div>
-        <div class="item"><div class="info"><span class="name">SURF + TURF ROLL (COOKED)</span><span class="desc">Cream cheese, grilled steak, and tempura shrimp.</span></div><div class="price">$11.95</div></div>
-        <div class="item"><div class="info"><span class="name">BOSTON ROLL (RAW)</span><span class="desc">Tuna, avocado, crab stick with cream cheese.</span></div><div class="price">$12.95</div></div>
-    </section>
-
-    <section>
-        <h2>🥗 Poké Bowls & Pot</h2>
-        <div class="item"><div class="info"><span class="name">TUNA / SPICY TUNA / SALMON POKÉ</span><span class="desc">Seaweed salad, avocado, diced tomato, fruit and vegetables.</span></div><div class="price">$16.95</div></div>
-        <div class="item"><div class="info"><span class="name">FANG'S POKÉ</span><span class="desc">Salmon, octopus, shrimp, vegetables.</span></div><div class="price">$19.95</div></div>
-        <div class="item"><div class="info"><span class="name">KOREAN HOT POT</span><span class="desc">Tofu, kimchi, seafood.</span></div><div class="price">$19.95</div></div>
-    </section>
-
-    <section>
-        <h2>🍱 Entrees</h2>
-        <div class="item"><div class="info"><span class="name">PAN FRIED TOFU</span><span class="desc">Soft tofu pan fried in garlic and butter.</span></div><div class="price">$16.95</div></div>
-        <div class="item"><div class="info"><span class="name">FUJI PORK BELLY / GENERAL TSO / MAPO TOFU / TONKOTSU</span></div><div class="price">$17.95</div></div>
-        <div class="item"><div class="info"><span class="name">MONGOLIAN BEEF / BULGOGI / GYUDON BEEF</span></div><div class="price">$19.95</div></div>
-        <div class="item"><div class="info"><span class="name">GALBI BIBIMBAP / PORK or BEEF BIBIMBAP</span><span class="desc">Assorted vegetables and egg in hot stone bowl.</span></div><div class="price">$20.95</div></div>
-    </section>
-
-    <section>
-        <h2>⭐ Sushi Bar Specials</h2>
-        <div class="item"><div class="info"><span class="name">CHIRASHI SUSHI / UNAGI BOWL</span></div><div class="price">$23.95</div></div>
-        <div class="item"><div class="info"><span class="name">SPRING SUSHI (RAW)</span><span class="desc">7 pcs nigiri & 8 pcs California roll.</span></div><div class="price">$24.95</div></div>
-        <div class="item"><div class="info"><span class="name">SASHIMI REGULAR (RAW)</span><span class="desc">12 pieces of select fillets.</span></div><div class="price">$28.95</div></div>
-        <div class="item"><div class="info"><span class="name">SUMMER SUSHI (RAW)</span><span class="desc">9 pcs nigiri & 8 pcs crunchy shrimp roll.</span></div><div class="price">$30.95</div></div>
-        <div class="item"><div class="info"><span class="name">SASHIMI DELUXE (RAW)</span><span class="desc">16 pieces of select fillets.</span></div><div class="price">$38.95</div></div>
-    </section>
-</div>
-
-<footer>
-    <p>© 2026 Allan’s Table On Wheels | Pensacola, FL</p>
-    <p>Prices Subject to Change</p>
-</footer>
-
-</body>
-</html>
+        <div class="item"><div class="info"><span class="name">TUNA / YELLOWTAIL / EEL / SCALLOP / SMOKED SAL
